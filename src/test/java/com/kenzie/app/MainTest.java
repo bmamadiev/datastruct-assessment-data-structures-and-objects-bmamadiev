@@ -43,7 +43,6 @@ public class MainTest {
         assertEquals(3, entryPassesByName.size(),"Test: Add multiple EntryPass to empty HashMap");
     }
 
-
     @Test
     public void testAddPassIfUnique_DuplicatePassNotAdded(){
         entryPassesByName.clear();
@@ -78,7 +77,6 @@ public class MainTest {
         assertEquals("general", currentEntry.getAccessLevel(), "Test: accessLevel updated");
     }
 
-
     @Test
     public void testGetVIPList_VIPFound(){
         entryPassesByName.clear();
@@ -97,6 +95,4 @@ public class MainTest {
         entryPassesByName.clear();
         assertEquals(0,Main.getVIPList(entryPassesByName).size(),"Test: No VIP returns empty list");
     }
-
 }
-
